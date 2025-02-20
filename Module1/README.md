@@ -31,3 +31,48 @@ The range of applications for an embedded system are enormous. For example, an e
 and system requirements
 
 ![CPU](./images/embedded-system.png)
+
+## Benefits and constraints of Embedded Systems
+
+### Advantages
+
+Microcontroller-based embedded systems have many advantages. For instance, software-based applications are more flexible than pure hardware, and can be adapted more easily to changes in system requirements. This can even translate to better performance and efficiency. 
+
+By partitioning the system into hardware and software components, the total system cost can be minimized. The system will be cheaper to make, operate, and maintain.Microcontroller-based designs can implement more features. Through system optimization, memory and on-chip components redundancy can also be reduced. Finally, microcontroller-based systems are more reliable. Failures can be detected, debugged, and
+compensated for.
+
+### Constraints
+
+Cost is very important in high-volume production, especially in today’s competitive markets. It is important to balance manufacturing, design, and production costs. Device size and weight can be a constraint, especially for portable and wearable systems. Battery capacity is another constraint, which in turn impacts the power consumption profile affordable to embedded devices.
+
+Finally, designers must consider the effects of any heating issues that may arise due to a system’s operation or the external environment.
+These constraints have various impacts on microcontroller-based embedded systems, which make operation and interfacing more difficult.
+
+Programming is mostly done in C or Assembly language due to inherent code efficiency and low programming overhead. These languages also allow control of the required clock cycles per operation more easily. Operating systems are less common for embedded systems, although this is changing in the Internet of Things era. Arm Mbed OS is one example. OSs can simplify development, but the real-time operating system overhead extends code size and reduces transparency around what is really happening inside the MCU.
+
+## Introduction to the Internet of Things
+
+The Internet of Things or IoT is a special application of embedded systems. A physical device is equipped with a microcontroller, sensors and communication interface, enabling it to connect with its environment and network with the whole world.
+
+Because virtually any device could have an embedded processor, <mark>IoT</mark> presents many opportunities
+for the growth of embedded systems. These can be loosely <mark>grouped into 3 main areas: industrial, consumer, and wearable.</mark>
+
+The IoT is driven by vast technical development in embedded chips. With smaller packages of embedded systems and more efficient production, prices can drop, allowing the number of applications and systems to increase.
+
+The number of IoT devices has already surpassed the human population, and huge growth is predicted for the future: according to various researchers, by 2030 the total number of connected devices may reach more than 125 billion. <mark>Arm estimates that by 2035, the total number of connected devices will reach 1 trillion.</mark>
+
+## Arm architecture and processors
+
+The Arm architecture is a family of RISC-based processor architectures, well known for its power efficiency and used in many mobile devices. The architecture details a set of instructions that define how the hardware should work upon execution of certain instructions. Arm architecture is suited for use in an array of IoT applications and includes features that meet the
+ever-evolving demands for new functionality, integrated security features, high performance and the
+needs of new and emerging markets
+
+Although Arm processors are widely considered an industry standard, Arm itself does not manufacture them. Instead, Arm designs the processor cores in its hardware libraries, licenses the designs to producers, and provides an ecosystem of development tools and manuals.
+
+Arm’s processor technology is designed and optimized with the needs and constraints of IoT devices in mind, and so are more energy efficient. Arm processors cover IoT applications from sensors to servers.
+
+|Cortex-A|Cortex-R|Cortex-M|
+|---|---|---|
+|Arm Cortex-A Processors are application processors used for feature-heavy operating systems and third-party applications. For example, machine learning at the edge, autonomous context-based decision making, or securely connecting IoT devices to the cloud.| Arm Cortex-R Processors are embedded processors for real-time signal processing and control applications. They meet the need for high performance, very low latency, and low power in devices such as connected cars, high-end cameras, or disk drive controllers.|Arm Cortex-M Processors are microcontroller-oriented processors. They can be application-specific, or suitable for system-on-chip uses. They are optimized for low energy consumption and small executables, requiring less physical space and silicon for a lower cost.|
+
+The Arm Cortex-M0 and Cortex-M0+ are designed for applications that require minimal cost, power, and area. These processors are optimized for simple sensing and controlling. The Cortex-M3, Cortex-M4 and Cortex-M7 are designed for data-intense operations with Harvard architecture, dedicated fast hardware multipliers, and math packages. The Cortex-M4 and Cortex-M7 integrate Digital Signal Processing and accelerated floating point processing capability for fast and power-efficient algorithm processing of digital signal control applications.
